@@ -2,4 +2,68 @@
 *:before,
 *:after {
   box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+$dark-grey: #c6538c;
+$grey: #8d99ae;
+$light-grey: #edf2f4;
+$dark-red: #7f1028;
+$light-red: #ad646d;
+$white: #ffffff;
+$button-height: 8.125rem;
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+header {
+  background-color: $dark-red;
+  color: $white;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 2.5rem 6rem;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  border-radius: $button-height;
+  height: $button-height;
+}
+
+.button-primary,
+.button-secondary {
+  color: $white;
+}
+
+.button-primary {
+  background-color: $dark-red;
+}
+
+.button-secondary {
+  background-color: $grey;
 }
