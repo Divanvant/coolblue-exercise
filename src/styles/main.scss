@@ -71,6 +71,9 @@ main {
       margin-top: 3rem;
     }
   }
+  .desktop-image {
+    display: none;
+  }
 }
 
 button {
@@ -212,5 +215,61 @@ section.faqs {
   }
   button {
     margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  button {
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+  .modal {
+    max-width: 50vw;
+    margin: 0 auto;
+  }
+  main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6rem 3rem;
+    .banner-content {
+      flex-grow: 1;
+      margin: 0 4rem;
+    }
+    .desktop-image {
+      display: block;
+      width: 25%;
+    }
+    .mobile-image {
+      display: none;
+    }
+    .button-wrapper {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        margin-top: 0;
+        margin-bottom: 0;
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+  section.faqs {
+    margin: 0 auto;
+    max-width: 60vw;
+    .accordion {
+      border-radius: 0.5rem;
+      border: 2px solid $grey;
+      .accordion-item:first-of-type {
+        border-top: none;
+      }
+      .accordion-item:last-of-type {
+        border-bottom: none;
+      }
+    }
   }
 }
