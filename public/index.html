@@ -6,6 +6,82 @@
     <link rel="stylesheet" href="./assets/styles/main.css" />
   </head>
   <body>
+    <div id="more-information-modal" class="modal-wrapper">
+      <div class="modal">
+        <div class="modal-header">
+          <h2>More information</h2>
+        </div>
+        <div class="modal-content">
+          <div class="product-option">
+            <img
+              src="/assets/images/product-2-transparent.png"
+              alt="Red alert bundle 2"
+            />
+            <h4>Warning Red Alert Basic</h4>
+            <p>Contains 3 door sensors, 2 door locks, 1 alarm and 1 hub.</p>
+            <h4 class="price">€ 59,99</h4>
+          </div>
+          <div class="product-option">
+            <img
+              src="/assets/images/product-1-transparent.png"
+              alt="Red alert bundle 1"
+            />
+            <h4>Warning Red Alert Premium</h4>
+            <p>
+              Contains everything Red Alert Basic has, plus a weather proof
+              camera
+            </p>
+            <h4 class="price">€ 109,99</h4>
+          </div>
+
+          <button id="more-information-close" class="button-primary">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="get-started-modal" class="modal-wrapper">
+      <div class="modal">
+        <div class="modal-header">
+          <h2>Get Started</h2>
+        </div>
+        <div class="modal-content">
+          <div class="product-option">
+            <img
+              src="/assets/images/product-2-transparent.png"
+              alt="Red alert bundle 2"
+            />
+            <h4>Warning Red Alert Basic</h4>
+            <p>Contains 3 door sensors, 2 door locks, 1 alarm and 1 hub.</p>
+            <h4 class="price">€ 59,99</h4>
+
+            <button id="add-to-cart-basic" class="button-primary">
+              Add to cart
+            </button>
+          </div>
+          <div class="product-option">
+            <img
+              src="/assets/images/product-1-transparent.png"
+              alt="Red alert bundle 1"
+            />
+            <h4>Warning Red Alert Premium</h4>
+            <p>
+              Contains everything Red Alert Basic has, plus a weather proof
+              camera
+            </p>
+            <h4 class="price">€ 109,99</h4>
+
+            <button id="add-to-cart-premium" class="button-primary">
+              Add to cart
+            </button>
+          </div>
+
+          <button id="get-started-close" class="button-secondary">Close</button>
+        </div>
+      </div>
+    </div>
+
     <header>
       <h1>Red Alert</h1>
       <h2>by Warning</h2>
@@ -21,10 +97,10 @@
         src="/assets/images/product-2-transparent.png"
         alt="Red alert bundle 2"
       />
-      <button id="get-started" class="button-primary">
+      <button id="get-started-button" class="button-primary">
         Get started for € 59,99
       </button>
-      <button id="more-information" class="button-secondary">
+      <button id="more-information-button" class="button-secondary">
         More information
       </button>
     </main>

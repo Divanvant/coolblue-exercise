@@ -41,9 +41,11 @@ h3 {
 
 h4 {
   font-size: 1.5rem;
+  margin: 0;
 }
 
-header {
+header,
+.modal-header {
   background-color: $dark-red;
   color: $white;
   padding: 1.25rem;
@@ -80,6 +82,7 @@ button {
   font-size: 1.25rem;
   border-radius: $button-height;
   height: $button-height;
+  cursor: pointer;
   &:not(:last-of-type) {
     margin-bottom: 1.5rem;
   }
@@ -111,6 +114,7 @@ button {
 section.faqs {
   padding-bottom: 3rem;
   h4 {
+    margin: 2rem 0;
     text-align: center;
   }
 }
@@ -157,5 +161,56 @@ section.faqs {
     &:last-of-type {
       border-bottom: 2px solid $grey;
     }
+  }
+}
+
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background: transparentize($white, 0.5);
+  padding: 1rem;
+  padding-top: 6rem;
+
+  .modal {
+    background: $white;
+    border-radius: 0.5rem;
+    max-height: 100%;
+    overflow: hidden scroll;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0.5rem 0.75rem 0.5rem;
+    .modal-header {
+      h2 {
+        font-weight: bold;
+      }
+    }
+    .modal-content {
+      padding-bottom: 2rem;
+      text-align: center;
+      button {
+        padding-left: 6rem;
+        padding-right: 6rem;
+      }
+    }
+  }
+  &.active {
+    display: block;
+  }
+}
+
+.product-option {
+  padding: 2rem;
+  h4:not(.price) {
+    margin-top: 2rem;
+    color: lighten($dark-red, 10%);
+  }
+  &:not(:last-of-type) {
+    border-bottom: 2px solid $grey;
+  }
+  button {
+    margin-top: 2rem;
   }
 }

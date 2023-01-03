@@ -17,4 +17,37 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     })
   })
+
+  document
+    .querySelector('#more-information-button')
+    .addEventListener('click', () => {
+      document.querySelector('#more-information-modal').classList.add('active')
+    })
+
+  document
+    .querySelector('#more-information-close')
+    .addEventListener('click', () => {
+      document
+        .querySelector('#more-information-modal')
+        .classList.remove('active')
+    })
+
+  document
+    .querySelector('#get-started-button')
+    .addEventListener('click', () => {
+      document.querySelector('#get-started-modal').classList.add('active')
+    })
+
+  document.querySelector('#get-started-close').addEventListener('click', () => {
+    document.querySelector('#get-started-modal').classList.remove('active')
+  })
+
+  document.querySelector('#add-to-cart-basic').addEventListener('click', () => {
+    alert('Added Warning Red Alert Basic to cart')
+  })
+  document
+    .querySelector('#add-to-cart-premium')
+    .addEventListener('click', () => {
+      alert('Added Warning Red Alert Premium to cart')
+    })
 })
