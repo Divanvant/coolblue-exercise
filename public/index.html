@@ -2,6 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Red Alert by Warning for your home security needs"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Red Alert by Warning</title>
     <link
       rel="apple-touch-icon"
@@ -24,6 +29,130 @@
     <link rel="stylesheet" href="./assets/styles/main.css" />
   </head>
   <body>
+    <header>
+      <h1>Red Alert</h1>
+      <h2>by Warning</h2>
+    </header>
+
+    <main aria-role="banner">
+      <div class="desktop-image">
+        <picture>
+          <img
+            src="/assets/images/product-2-transparent.webp"
+            alt="Red alert bundle 2"
+          />
+        </picture>
+      </div>
+      <div class="banner-content">
+        <h3>Protect your home <br /><span>for a criminally low price</span></h3>
+
+        <picture>
+          <img
+            src="/assets/images/product-2-transparent.webp"
+            alt="Red alert bundle 2"
+            class="mobile-image"
+          />
+        </picture>
+        <div class="button-wrapper">
+          <button
+            tabindex="1"
+            aria-role="button"
+            id="get-started-button"
+            class="button-primary"
+          >
+            Get started for € 59,99
+          </button>
+          <button
+            tabindex="2"
+            aria-role="button"
+            id="more-information-button"
+            class="button-secondary"
+          >
+            More information
+          </button>
+        </div>
+      </div>
+      <div class="desktop-image">
+        <picture>
+          <img
+            src="/assets/images/product-1-transparent.webp"
+            alt="Red alert bundle 1"
+          />
+        </picture>
+      </div>
+    </main>
+
+    <section class="faqs">
+      <h4>Most asked questions</h4>
+
+      <div class="accordion">
+        <details>
+          <summary>How long does Red Alert stay active after enabling?</summary>
+          <div class="accordion-body">
+            Once you enable Red Alert, it stays active until the moment you have
+            set during the initial setup of your Red Alert Home Alarm. By
+            default this is 08:00 in the morning.
+          </div>
+        </details>
+
+        <details>
+          <summary>When should I replace Red Alert?</summary>
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            What is the benefit of Red Alert compared to other home invasion
+            alarms?
+          </summary>
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </details>
+
+        <details>
+          <summary>
+            What guarantees does Red Alert give against burglary?
+          </summary>
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </details>
+        <details>
+          <summary>Why is Red Alert so cheap compared to alternatives?</summary>
+          <div class="accordion-body">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </details>
+      </div>
+    </section>
+
     <div id="more-information-modal" class="modal-wrapper">
       <div class="modal">
         <div class="modal-header">
@@ -31,20 +160,24 @@
         </div>
         <div class="modal-content">
           <div class="product-option">
-            <img
-              src="/assets/images/product-2-transparent.png"
-              alt="Red alert bundle 2"
-            />
-            <h4>Warning Red Alert Basic</h4>
+            <picture>
+              <img
+                src="/assets/images/product-2-transparent.webp"
+                alt="Red alert bundle 2"
+              />
+            </picture>
+            <h3>Warning Red Alert Basic</h3>
             <p>Contains 3 door sensors, 2 door locks, 1 alarm and 1 hub.</p>
             <h4 class="price">€ 59,99</h4>
           </div>
           <div class="product-option">
-            <img
-              src="/assets/images/product-1-transparent.png"
-              alt="Red alert bundle 1"
-            />
-            <h4>Warning Red Alert Premium</h4>
+            <picture>
+              <img
+                src="/assets/images/product-1-transparent.webp"
+                alt="Red alert bundle 1"
+              />
+            </picture>
+            <h3>Warning Red Alert Premium</h3>
             <p>
               Contains everything Red Alert Basic has, plus a weather proof
               camera
@@ -66,11 +199,13 @@
         </div>
         <div class="modal-content">
           <div class="product-option">
-            <img
-              src="/assets/images/product-2-transparent.png"
-              alt="Red alert bundle 2"
-            />
-            <h4>Warning Red Alert Basic</h4>
+            <picture>
+              <img
+                src="/assets/images/product-2-transparent.webp"
+                alt="Red alert bundle 2"
+              />
+            </picture>
+            <h3>Warning Red Alert Basic</h3>
             <p>Contains 3 door sensors, 2 door locks, 1 alarm and 1 hub.</p>
             <h4 class="price">€ 59,99</h4>
 
@@ -79,11 +214,13 @@
             </button>
           </div>
           <div class="product-option">
-            <img
-              src="/assets/images/product-1-transparent.png"
-              alt="Red alert bundle 1"
-            />
-            <h4>Warning Red Alert Premium</h4>
+            <picture>
+              <img
+                src="/assets/images/product-1-transparent.webp"
+                alt="Red alert bundle 1"
+              />
+            </picture>
+            <h3>Warning Red Alert Premium</h3>
             <p>
               Contains everything Red Alert Basic has, plus a weather proof
               camera
@@ -99,118 +236,6 @@
         </div>
       </div>
     </div>
-
-    <header>
-      <h1>Red Alert</h1>
-      <h2>by Warning</h2>
-    </header>
-
-    <main>
-      <div class="desktop-image">
-        <img
-          src="/assets/images/product-2-transparent.png"
-          alt="Red alert bundle 2"
-        />
-      </div>
-      <div class="banner-content">
-        <h3>Protect your home <br /><span>for a criminally low price</span></h3>
-
-        <img
-          src="/assets/images/product-2-transparent.png"
-          alt="Red alert bundle 2"
-          class="mobile-image"
-        />
-        <div class="button-wrapper">
-          <button id="get-started-button" class="button-primary">
-            Get started for € 59,99
-          </button>
-          <button id="more-information-button" class="button-secondary">
-            More information
-          </button>
-        </div>
-      </div>
-      <div class="desktop-image">
-        <img
-          src="/assets/images/product-1-transparent.png"
-          alt="Red alert bundle 1"
-        />
-      </div>
-    </main>
-
-    <section class="faqs">
-      <h4>Most asked questions</h4>
-
-      <div class="accordion">
-        <div class="accordion-item">
-          <div class="accordion-header">
-            How long does Red Alert stay active after enabling?
-          </div>
-          <div class="accordion-body">
-            Once you enable Red Alert, it stays active until the moment you have
-            set during the initial setup of your Red Alert Home Alarm. By
-            default this is 08:00 in the morning.
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-header">When should I replace Red Alert?</div>
-          <div class="accordion-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-header">
-            What is the benefit of Red Alert compared to other home invasion
-            alarms?
-          </div>
-          <div class="accordion-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-header">
-            What guarantees does Red Alert give against burglary?
-          </div>
-          <div class="accordion-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-        </div>
-        <div class="accordion-item">
-          <div class="accordion-header">
-            Why is Red Alert so cheap compared to alternatives?
-          </div>
-          <div class="accordion-body">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-        </div>
-      </div>
-    </section>
     <script src="./assets/scripts/bundle.js" defer></script>
   </body>
 </html>

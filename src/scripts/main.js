@@ -1,17 +1,10 @@
-const removeAllActiveStates = (items) => {
-  items.forEach((item) => {
-    item.classList.remove('active')
-  })
-}
-
 document
   .querySelector('#more-information-modal')
   .addEventListener('click', () => {
-    document.querySelector('#more-information-modal').classList.remove('active')
+    document.querySelector('#more-information-modal').classList.toggle('active')
   })
 
 document.addEventListener('DOMContentLoaded', () => {
-  const accordionItems = document.querySelectorAll('.accordion-item')
   const modalWrappers = document.querySelectorAll('.modal-wrapper')
 
   const moreInfoModal = document.querySelector('#more-information-modal')
@@ -22,36 +15,46 @@ document.addEventListener('DOMContentLoaded', () => {
   const getStartedButton = document.querySelector('#get-started-button')
   const getStartedClose = document.querySelector('#get-started-close')
 
-  accordionItems.forEach((item) => {
-    item.addEventListener('click', (event) => {
-      const currentAccordionItem = event.target.closest('.accordion-item')
-      if (currentAccordionItem.classList.contains('active')) {
-        removeAllActiveStates(accordionItems)
-      } else {
-        removeAllActiveStates(accordionItems)
-        currentAccordionItem.classList.add('active')
-      }
+  const details = document.querySelectorAll('details')
+
+  details.forEach((targetDetail) => {
+    targetDetail.addEventListener('click', () => {
+      details.forEach((detail) => {
+        if (detail !== targetDetail) {
+          detail.removeAttribute('open')
+        }
+      })
     })
+  })
+
+  document.addEventListener('keyup', function (event) {
+    if (event.keyCode === 27) {
+      modalWrappers.forEach((item) => {
+        item.classList.remove('active')
+      })
+    }
   })
 
   modalWrappers.forEach((item) => {
     item.addEventListener('click', () => {
-      removeAllActiveStates(modalWrappers)
+      modalWrappers.forEach((item) => {
+        item.classList.remove('active')
+      })
     })
   })
 
   moreInfoButton.addEventListener('click', () => {
-    moreInfoModal.classList.add('active')
+    moreInfoModal.classList.toggle('active')
   })
   moreInformationClose.addEventListener('click', () => {
-    moreInfoModal.classList.remove('active')
+    moreInfoModal.classList.toggle('active')
   })
 
   getStartedButton.addEventListener('click', () => {
-    getStartedModal.classList.add('active')
+    getStartedModal.classList.toggle('active')
   })
   getStartedClose.addEventListener('click', () => {
-    getStartedModal.classList.remove('active')
+    getStartedModal.classList.toggle('active')
   })
 
   document
